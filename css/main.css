@@ -114,15 +114,13 @@ header aside {
   margin-bottom: 0.5em;
 }
 
-/* https://github.com/rsms/inter/blob/master/LICENSE.txt
+/* https://github.com/vercel/geist-font/blob/main/LICENSE.TXT
 
-Copyright (c) 2016-2020 The Inter Project Authors.
-"Inter" is trademark of Rasmus Andersson.
-https://github.com/rsms/inter
+Geist Sans and Geist Mono Font
+(C) 2023 Vercel, made in collaboration with basement.studio
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
-http://scripts.sil.org/OFL
+This license is available with a FAQ at: http://scripts.sil.org/OFL and copied below
 
 -----------------------------------------------------------
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
@@ -212,56 +210,6 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 
 */
-/* --------------------------------------------------------------------------
-Single variable font.
-
-Note that you may want to do something like this to make sure you're serving
-constant fonts to older browsers:
-html {
-  font-family: 'Inter UI', sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Inter UI var', sans-serif;
-  }
-}
-*/
-@font-face {
-  font-family: "Inter UI";
-  font-weight: 100 900;
-  font-style: oblique 0deg 10deg;
-  src: url("/fonts/Inter-3.19.var.woff2") format("woff2");
-}
-
-/*
-
-The Bahunya CSS framework https://kimeiga.github.io/bahunya/
-
-https://github.com/Kimeiga/bahunya/blob/master/LICENSE
-
-MIT License
-
-Copyright (c) 2018 Hakan Alpay
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-*/
 
 html {
   line-height: 1.15;
@@ -342,6 +290,7 @@ select {
 [type="reset"],
 [type="submit"],
 button {
+  appearance: button;
   -webkit-appearance: button;
 }
 [type="button"]::-moz-focus-inner,
@@ -384,6 +333,7 @@ textarea {
   height: auto;
 }
 [type="search"] {
+  appearance: textfield;
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -689,8 +639,8 @@ dt {
   }
 }
 html {
-  font-family: Inter UI, sans-serif;
-  --font-family: Inter UI, sans-serif;
+  font-family: GeistSans, sans-serif;
+  --font-family: GeistSans, sans-serif;
 }
 form {
   padding: 1.5em 1.5em 0;
