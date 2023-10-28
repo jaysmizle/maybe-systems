@@ -161,6 +161,11 @@ module.exports = function (eleventyConfig) {
     return dt.toISO();
   });
 
+//Generate random page heading.
+eleventyConfig.addFilter("randomWordIndex", function (arr) {
+  return Math.floor(Math.random() * arr.length);
+});
+
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if (n < 0) {
